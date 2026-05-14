@@ -1,0 +1,73 @@
+.skills {
+  background: var(--white);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skill-category h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--gray-light);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tool-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.tool-name {
+  font-weight: 600;
+}
+
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.skill-tag {
+  background: var(--gray-light);
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.lang-tag {
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #1a3a5f; /* Deep Navy Blue */
+  --secondary-color: #2c5282; /* Lighter Blue */
+  --accent-color: #4fd1c5; /* Teal for accents */
+  --text-color: #2d3748;
+  --bg-color: #f7fafc;
+  --white: #ffffff;
+  --gray-light: #edf2f7;
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
